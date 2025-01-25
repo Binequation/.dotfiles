@@ -1,0 +1,70 @@
+# i3status configuration file. (minimalistic)
+# By Binequation! <3
+# ~/.config/i3status/config (copied from /etc/i3status.conf)
+
+general {
+        colors = true
+        interval = 5
+}
+
+# Placement 
+order += "wireless _first_"
+order += "ethernet _first_"
+order += "battery all"
+order += "disk /"
+order += "load"
+order += "tztime local"
+order += "volume master"
+
+# Internet settings
+wireless _first_ {
+        format_up = "%quality | %frequency"
+        format_down = "Don't get it :("
+}
+
+ethernet _first_ {
+        format_up = ":%speed; Leaked IP %ip)"
+        format_down = "DAUN"
+}
+
+# Battery behaviour
+battery all {
+        format = "%percentage" # General format
+
+	# true - from 0 to 100 percentage
+	# false - from 0 to n where n percentage at current moment
+	last_full_capacity = true
+	format_down = "Energy out :("
+
+	# Status
+	status_chr = "" # Charging status
+    	status_bat = "" # Working from battery status
+    	status_unk = "? UNK" # Unknown status
+    	status_full = "" # Full battery status
+    	path = "/sys/class/power_supply/BAT%d/uevent"
+
+   	# red color when low battery
+    	low_threshold = 10
+}
+
+disk "/" {
+	format = "HARDCORE GAY PORN: %avail"
+}
+
+load {
+        format = "Hot loads: %1min"
+}
+
+tztime local {
+	format = " %d %b  %H:%M:%S"
+}
+
+# Control volume behaviour
+volume master {
+    format = " %volume" # Active status
+    format_muted = " %volume" # Muted status
+    device = "default"
+    mixer = "Master"
+    mixer_idx = 0
+}
+

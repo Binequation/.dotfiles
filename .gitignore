@@ -1,3 +1,8 @@
 # Delete vscode artifacts (useless for me btw)
 .vscode
 .idea
+
+# ETC useless stuff
+.DS_Store
+*.log
+*.swp
