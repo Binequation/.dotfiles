@@ -3,8 +3,8 @@
   <h1>🚀 My Dotfiles</h1>
   <p>My personal development environment configuration</p>
   
-  ![GitHub last commit](https://img.shields.io/github/last-commit/yourusername/dotfiles)
-  ![GitHub repo size](https://img.shields.io/github/repo-size/yourusername/dotfiles)
+  ![GitHub last commit](https://img.shields.io/github/last-commit/Binequation/dotfiles)
+  ![GitHub repo size](https://img.shields.io/github/repo-size/Binequation/dotfiles)
   [![License](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 </div>
 
@@ -14,11 +14,10 @@
 
 ## 📋 Table of Contents
 - [Overview](https://github.com/Binequation/.dotfiles?tab=readme-ov-file#overview-1)
-- [Features](#features)
 - [Requirements](https://github.com/Binequation/.dotfiles?tab=readme-ov-file#-requirements)
   - [Basic Dependencies](https://github.com/Binequation/.dotfiles?tab=readme-ov-file#basic-dependencies)
   - [Optional Tools](https://github.com/Binequation/.dotfiles?tab=readme-ov-file#optional-tools)
-- [Installation](https://github.com/Binequation/.dotfiles?tab=readme-ov-file#installation)
+- [Installation](https://github.com/Binequation/.dotfiles?tab=readme-ov-file#-installation)
 - [Configuration](#configuration)
   - Neovim
   - Zsh
@@ -109,14 +108,14 @@ chmod +x install-requirements.sh
     * [zsh-syntax-highlighting](https://github.com/zsh-users/zsh-syntax-highlighting) - Syntax highlighting
 
 * **Aliases to boost productivity (git aliases is default):**
-  * alias zconf="nvim ~/.zshrc"  - Fast access to config file
-  * alias zupd="source ~/.zshrc" - Fast config info update
-  * alias ARCH_UPD="sudo pacman -Syu --noconfirm" - Full system update
-  * alias PKGS_UPD="yay -Syu --noconfirm" - Full packages update
-  * alias cls="tput reset" - Full terminal clearing
+  * `alias zconf="nvim ~/.zshrc"`  - Fast access to config file
+  * `alias zupd="source ~/.zshrc"` - Fast config info update
+  * `alias ARCH_UPD="sudo pacman -Syu --noconfirm"` - Full system update
+  * `alias PKGS_UPD="yay -Syu --noconfirm"` - Full packages update
+  * `alias cls="tput reset"` - Full terminal clearing
 
 * **Theme:**
-    * powerlevel10k
+    * Powerlevel10k
 
 </details>
 
