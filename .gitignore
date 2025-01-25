@@ -1,0 +1,3 @@
+# Delete vscode artifacts (useless for me btw)
+.vscode
+.idea
