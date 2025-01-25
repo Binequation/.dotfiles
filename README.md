@@ -1,36 +1,79 @@
 # Overview
-![My setup](screenshots/my-setup.png)
+<div align="center">
+  <h1>🚀 My Dotfiles</h1>
+  <p>My personal development environment configuration</p>
+  
+  ![GitHub last commit](https://img.shields.io/github/last-commit/yourusername/dotfiles)
+  ![GitHub repo size](https://img.shields.io/github/repo-size/yourusername/dotfiles)
+  [![License](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
+</div>
 
-# Description
+<div align="center">
+  <img src="screenshots/my-setup.png" alt="Desktop Screenshot" width="800">
+</div>
+
+## 📋 Table of Contents
+- [Overview](#overview)
+- [Features](#features)
+- [Requirements](#requirements)
+  - [Basic Dependencies](#basic-dependencies)
+  - [Optional Tools](#optional-tools)
+- [Installation](#installation)
+- [Configuration](#configuration)
+  - [Neovim](#neovim)
+  - [Zsh](#zsh)
+  - [Alacritty](#alacritty)
+  - [i3/i3status](#i3i3status)
+- [Version Managers](#version-managers)
+  - [Node Version Manager](#node-version-manager-nvm)
+  - [Python Version Manager](#python-version-manager-pyenv)
+  - [Rust Version Manager](#rust-version-manager-rustup)
+- [Screenshots](#screenshots)
+- [License](#license)
+
+## Overview
+<div align="center">
+  <table>
+    <tr>
+      <td align="center">
+        <img src="https://raw.githubusercontent.com/neovim/neovim.github.io/master/logos/neovim-logo.png" width="100"><br>
+        <sub><b>Neovim</b></sub>
+      </td>
+      <td align="center">
+        <img src="https://raw.githubusercontent.com/alacritty/alacritty/master/extra/logo/compat/alacritty-term%2Bscanlines.png" width="100"><br>
+        <sub><b>Alacritty</b></sub>
+      </td>
+      <td align="center">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT6cTyraxbgvYP2PKvI_FLGmLHmc3tfgXNPPw&s" width="100"><br>
+        <sub><b>Zsh</b></sub>
+      </td>
+    </tr>
+  </table>
+</div>
 
 This repository contains my dotfiles. They are aimed at maximum productivity, both in daily routine and in development.
+- 🛠 Preconfigured development environment
+- 📝 Modern text editing with Neovim
+- 🔨 Powerful shell with Zsh
+- 🖥 Fast terminal emulator (Alacritty)
+- 🪟 Tiling window manager (i3)
 
-## Requirements
+## ⚡ Requirements
 
 ### Basic Dependencies
-- git
-- curl
-- neovim (>= 0.8.0)
-- zsh
-- alacritty
+- Git
+- Curl
+- Neovim (>= 0.8.0)
+- Zsh
+- Alacritty
 - i3/i3status
 
-### Optional but Recommended
-- ripgrep (for telescope.nvim)
-- fd-find (for telescope.nvim)
-- A nerd font (for icons)
+### Optional Tools
+- Ripgrep
+- fd-find
+- Nerd Font
 
-### Language Servers (for Neovim)
-- typescript-language-server
-- pyright
-- rust-analyzer
-
-### Version Managers
-- nvm for Node.js
-- pyenv for Python
-- rustup for Rust
-
-### Installation
+## 🔧 Installation
 ```bash
 # Clone the repository
 git clone https://github.com/yourusername/dotfiles.git ~/.dotfiles
@@ -44,47 +87,90 @@ chmod +x install-requirements.sh
 ./install.sh
 ```
 
-### Additional tips:
-1. Check versions of critical tools:
-```bash
-# Add to install-requirements.sh
-check_versions() {
-    echo "Neovim version: $(nvim --version | head -n1)"
-    echo "Node version: $(node --version)"
-    echo "Python version: $(python --version)"
-    echo "Rust version: $(rustc --version)"
-}
-```
+<details>
+<summary><b>Neovim Configuration</b></summary>
 
-2. If you use macOS:
-```bash
-# Brewfile
-tap "homebrew/bundle"
-tap "homebrew/cask-fonts"
+* **Plugins:**
+    * they will be added later
+* **Keybindings:**
+    * they're updating rn
 
-# CLI tools
-brew "neovim"
-brew "ripgrep"
-brew "fd"
+* **Theme:**
+     * will be added later
 
-# Apps
-cask "alacritty"
+* **Other Settings:**  (e.g., autocompletion, linting)
+    * will be added later
 
-# Fonts
-cask "font-fira-code-nerd-font"
-```
+</details>
+<details>
+<summary><b>Zsh Configuration</b></summary>
 
-## Version Managers
+* **Plugins:**
+    * [zsh-autosuggestions](https://github.com/zsh-users/zsh-autosuggestions) - Command suggestions
+    * [zsh-syntax-highlighting](https://github.com/zsh-users/zsh-syntax-highlighting) - Syntax highlighting
+
+* **Aliases to boost productivity (git aliases is default):**
+  * alias zconf="nvim ~/.zshrc"  - Fast access to config file
+  * alias zupd="source ~/.zshrc" - Fast config info update
+  * alias ARCH_UPD="sudo pacman -Syu --noconfirm" - Full system update
+  * alias PKGS_UPD="yay -Syu --noconfirm" - Full packages update
+  * alias cls="tput reset" - Full terminal clearing
+
+* **Theme:**
+    * powerlevel10k
+
+</details>
+
+<details>
+<summary><b>Alacritty Configuration</b></summary>
+
+* **Theme:**
+    * Default (on rn actually)
+
+* **Font:**
+    * JetBrains Mono Nerd Font
+
+* **Keybindings:** 
+    * Default (on rn actually)
+</details>
+
+<details>
+<summary><b>i3/i3status Configuration</b></summary>
+
+* **Workspaces:**
+    * 1: Code
+    * 2: Terminal
+    * 3: Web Browser
+
+* **Keybindings:** (if customized)
+    * Will be added later (screensaver, dim screen, volume control)
+
+* **i3status config:**
+    * Wifi and Ethernet has a Wifi glyph shows quality and frequency
+    * Date and time with special glyphs
+    * Volume control
+    * Other was smol configured :)
+
+</details>
+
+## 📦 Version Managers
 
 ### Node Version Manager (nvm)
-NVM allows you to install and manage multiple versions of Node.js.
 
-**Installation:**
 ```bash
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh | bash
 ```
-After installation, you can install Node.js versions like this:
+
+## Python Version Manager (pyenv)
 ```bash
-nvm install node # Install latest Node.js
-nvm install 14   # Install Node.js version 14
+curl https://pyenv.run | bash
 ```
+
+## Rust Version Manager (rustup)
+```bash
+curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
+```
+
+## 📄 License
+
+This project is licensed under the MIT License - see the [LICENSE](~/.dotfiles/LICENSE) file fordetails.
