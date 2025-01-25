@@ -13,23 +13,22 @@
 </div>
 
 ## 📋 Table of Contents
-- [Overview](#overview)
+- [Overview](https://github.com/Binequation/.dotfiles?tab=readme-ov-file#overview-1)
 - [Features](#features)
-- [Requirements](#requirements)
-  - [Basic Dependencies](#basic-dependencies)
-  - [Optional Tools](#optional-tools)
-- [Installation](#installation)
+- [Requirements](https://github.com/Binequation/.dotfiles?tab=readme-ov-file#-requirements)
+  - [Basic Dependencies](https://github.com/Binequation/.dotfiles?tab=readme-ov-file#basic-dependencies)
+  - [Optional Tools](https://github.com/Binequation/.dotfiles?tab=readme-ov-file#optional-tools)
+- [Installation](https://github.com/Binequation/.dotfiles?tab=readme-ov-file#installation)
 - [Configuration](#configuration)
-  - [Neovim](#neovim)
-  - [Zsh](#zsh)
-  - [Alacritty](#alacritty)
-  - [i3/i3status](#i3i3status)
-- [Version Managers](#version-managers)
-  - [Node Version Manager](#node-version-manager-nvm)
-  - [Python Version Manager](#python-version-manager-pyenv)
-  - [Rust Version Manager](#rust-version-manager-rustup)
-- [Screenshots](#screenshots)
-- [License](#license)
+  - Neovim
+  - Zsh
+  - Alacritty
+  - i3/i3status
+- [Version Managers](https://github.com/Binequation/.dotfiles?tab=readme-ov-file#-version-managers)
+  - [Node Version Manager](https://github.com/Binequation/.dotfiles?tab=readme-ov-file#node-version-manager-nvm)
+  - [Python Version Manager](https://github.com/Binequation/.dotfiles?tab=readme-ov-file#python-version-manager-pyenv)
+  - [Rust Version Manager](https://github.com/Binequation/.dotfiles?tab=readme-ov-file#rust-version-manager-rustup)
+- [License](https://github.com/Binequation/.dotfiles?tab=readme-ov-file#-license)
 
 ## Overview
 <div align="center">
@@ -86,7 +85,7 @@ chmod +x install-requirements.sh
 # Create symlinks
 ./install.sh
 ```
-
+## Configuration
 <details>
 <summary><b>Neovim Configuration</b></summary>
 
@@ -173,4 +172,4 @@ curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 
 ## 📄 License
 
-This project is licensed under the MIT License - see the [LICENSE](~/.dotfiles/LICENSE) file fordetails.
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file fordetails.
