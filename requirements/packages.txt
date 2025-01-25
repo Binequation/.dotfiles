@@ -1,0 +1,10 @@
+neovim
+zsh
+alacritty
+i3
+i3status
+ripgrep
+fd-find
+git
+curl
+wget
