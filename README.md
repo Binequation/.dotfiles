@@ -3,13 +3,14 @@
   <h1>🚀 My Dotfiles</h1>
   <p>My personal development environment configuration</p>
   
-  ![GitHub last commit](https://img.shields.io/github/last-commit/Binequation/dotfiles)
-  ![GitHub repo size](https://img.shields.io/github/repo-size/Binequation/dotfiles)
+  ![GitHub last commit](https://img.shields.io/github/last-commit/Binequation/.dotfiles)
+  ![GitHub repo size](https://img.shields.io/github/repo-size/Binequation/.dotfiles)
   [![License](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 </div>
 
 <div align="center">
   <img src="screenshots/my-setup.png" alt="Desktop Screenshot" width="800">
+  <p>Yeah... I use Arch btw! :)<p>
 </div>
 
 ## 📋 Table of Contents
