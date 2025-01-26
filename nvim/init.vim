@@ -113,6 +113,52 @@ call plug#end()
 " Airline colorscheme
 let g:airline_theme='monochrome'
 
+" NvimTree keybindings
+lua << EOF
+require('nvim-tree').setup({
+  sort_by = "case_sensitive",
+  view = {
+    width = 30,
+  },
+  renderer = {
+    group_empty = true,
+  },
+  filters = {
+    dotfiles = false,
+  },
+})
+EOF
+
+nnoremap <C-n> :NvimTreeToggle<CR>
+nnoremap <leader>r :NvimTreeRefresh<CR>
+nnoremap <leader>n :NvimTreeFindFile<CR>
+
+
+" BARBAR Settings
+" Move to previous/next
+nnoremap <silent> <A-,> :BufferPrevious<CR>
+nnoremap <silent> <A-.> :BufferNext<CR>
+" Close buffer
+nnoremap <silent> <A-c> :BufferClose<CR>
+" Magic buffer-picking mode
+nnoremap <silent> <C-p> :BufferPick<CR>
+
+" Trouble keybindings
+lua << EOF
+require("trouble").setup({
+    icons = true,
+    auto_open = false,
+    auto_close = true,
+})
+EOF
+
+nnoremap <leader>xx <cmd>TroubleToggle<cr>
+nnoremap <leader>xw <cmd>TroubleToggle workspace_diagnostics<cr>
+nnoremap <leader>xd <cmd>TroubleToggle document_diagnostics<cr>
+nnoremap <leader>xq <cmd>TroubleToggle quickfix<cr>
+nnoremap <leader>xl <cmd>TroubleToggle loclist<cr>
+
+
 " Coc settings
 inoremap <silent><expr> <TAB>
       \ coc#pum#visible() ? coc#pum#next(1) :

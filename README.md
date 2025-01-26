@@ -2,10 +2,8 @@
 <div align="center">
   <h1>🚀 My Dotfiles</h1>
   <p>My personal development environment configuration</p>
-  
-  ![GitHub last commit](https://img.shields.io/github/last-commit/Binequation/.dotfiles)
-  ![GitHub repo size](https://img.shields.io/github/repo-size/Binequation/.dotfiles)
-  [![License](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
+
+ [![License](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 </div>
 
 <div align="center">
@@ -90,15 +88,19 @@ chmod +x install-requirements.sh
 <summary><b>Neovim Configuration</b></summary>
 
 * **Plugins:**
-    * they will be added later
+    ### LSP integration:
+    * Automatic code compeletion
+    * On-the-fly diagnostics (error highlighting)
+    * Go-to-definition navigation
 * **Keybindings:**
     * they're updating rn
 
 * **Theme:**
-     * will be added later
+    * [Paramount colorscheme](https://github.com/owickstrom/vim-colors-paramount)
+    * [Airline theme](https://github.com/vim-airline/vim-airline-themes) - I use `monochrome`
 
 * **Other Settings:**  (e.g., autocompletion, linting)
-    * will be added later
+    * Other cool stuff you can look in config
 
 </details>
 <details>
@@ -114,6 +116,9 @@ chmod +x install-requirements.sh
   * `alias ARCH_UPD="sudo pacman -Syu --noconfirm"` - Full system update
   * `alias PKGS_UPD="yay -Syu --noconfirm"` - Full packages update
   * `alias cls="tput reset"` - Full terminal clearing
+  * `alias znvim="nvim ~/.config/nvim/init.vim"` - Fast nvim config access
+
+
 
 * **Theme:**
     * Powerlevel10k
